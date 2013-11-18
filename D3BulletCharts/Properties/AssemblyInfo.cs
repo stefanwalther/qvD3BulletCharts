@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ExtensionTemplate.Properties")]
+[assembly: AssemblyTitle("D3BulletCharts.Properties")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ExtensionTemplate.Properties")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
+[assembly: AssemblyProduct("D3BulletCharts.Properties")]
+[assembly: AssemblyCopyright("Copyright ©  2013 Stefan Walther")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
