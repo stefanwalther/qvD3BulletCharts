@@ -3,6 +3,7 @@ D3BulletCharts - QlikView Extension
 
 D3BulletCharts is a QlikView object extension based on the famous [D3 JavaScript charting](http://d3js.org/) library.
 
+
 Motivation
 ---------------
 If you install QlikView you'll find an extension example called "bullet" with a basic implementation to integrate bullet charts in QlikView.
