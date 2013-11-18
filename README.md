@@ -41,7 +41,7 @@ This QlikView Object Extension is only developed and tested with QlikView 11 SR2
 
 ### Known Issues
 
-- non so far
+- If you do not like the colors, change the style.css located in the folder `lib/css/`
 
 ### Possible Improvements
 Some improvements I could imagine:
