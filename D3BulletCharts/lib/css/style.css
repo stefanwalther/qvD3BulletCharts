@@ -1,0 +1,23 @@
+﻿
+/* General Styles */
+.divBulletChartContainer {
+    overflow-x:hidden;
+    overflow-y:auto;
+    width:100%;
+    height:100%;
+}
+
+
+/* Bullet Graph Styles */
+.bullet { font: 10px sans-serif; }
+.bullet .marker { stroke: #000; stroke-width: 2px; }
+.bullet .tick line { stroke: #666; stroke-width: .5px; }
+.bullet .range.s0 { fill: #eee; }
+.bullet .range.s1 { fill: #ddd; }
+.bullet .range.s2 { fill: #ccc; }
+/*.bullet .measure.s0 { fill: lightsteelblue; }
+.bullet .measure.s1 { fill: steelblue; }*/
+.bullet .measure.s0 { fill: rgb(173, 221, 142); }
+.bullet .measure.s1 { fill: rgb(49, 163, 84); }
+.bullet .title { font-size: 14px; font-weight: bold; }
+.bullet .subtitle { fill: #999; }
