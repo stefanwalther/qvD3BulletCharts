@@ -12,7 +12,8 @@
             measures = bulletMeasures,
             width = 380,
             height = 30,
-            tickFormat = null;
+            tickFormat = null,
+            colorSchema = 'default';
 
         // For each small multiple…
         function bullet(g) {
@@ -64,7 +65,7 @@
                     .data(measurez);
 
                 measure.enter().append("rect")
-                    .attr("class", function (d, i) { return "measure s" + i; })
+                    .attr("class", function (d, i) { return "measure s" + i + "-" + colorSchema; })
                     .attr("width", w0)
                     .attr("height", height / 3)
                     .attr("x", reverse ? x0 : 0)
@@ -209,6 +210,12 @@
             duration = x;
             return bullet;
         };
+
+        bullet.colorSchema = function (x) {
+            if (!arguments.length) return colorSchema;
+            colorSchema = x;
+            return bullet;
+        }
 
         return bullet;
     };

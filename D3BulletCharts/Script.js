@@ -75,6 +75,7 @@ function D3BulletCharts_Init() {
 
                 ConsoleInfo("Render Container");
 
+
                 //if ($("#" + _this.ExtSettings.ContainerId).length === 0) {
                     ConsoleLog("\tCreating chart container ...");
 
@@ -103,13 +104,17 @@ function D3BulletCharts_Init() {
             function RenderChartData(data) {
 
                 ConsoleInfo("Render Chart");
+
+                var colorSchema = (_this.Layout.Text0.text != '') ? _this.Layout.Text0.text : '';
+
                  var margin = { top: 5, right: 40, bottom: 20, left: 120 },
                     width = _this.GetWidth() - margin.left - margin.right,
                     height = 50 - margin.top - margin.bottom;                   //Todo: Work out how to configure this
 
                 var chart = d3.bullet()
                     .width(width)
-                    .height(height);
+                    .height(height)
+                    .colorSchema(colorSchema);
 
                 var svg = d3.select("#" + _this.ExtSettings.ContainerId).selectAll("svg")
                       .data(data)
@@ -167,6 +172,47 @@ function D3BulletCharts_Init() {
                 _this.ExtSettings.LoadUrl = Qva.Remote + (Qva.Remote.indexOf('?') >= 0 ? '&' : '?') + 'public=only' + '&name=';
                 _this.ExtSettings.ContainerId = 'BulletChart_' + _this.ExtSettings.UniqueId;
 
+            }
+
+            // -----------------------------------------------------------
+            // Dropdown fix
+            // -----------------------------------------------------------
+            if (Qva.Mgr.mySelect == undefined) {
+                Qva.Mgr.mySelect = function (owner, elem, name, prefix) {
+                    if (!Qva.MgrSplit(this, name, prefix)) return;
+                    owner.AddManager(this);
+                    this.Element = elem;
+                    this.ByValue = true;
+
+                    elem.binderid = owner.binderid;
+                    elem.Name = this.Name;
+
+                    elem.onchange = Qva.Mgr.mySelect.OnChange;
+                    elem.onclick = Qva.CancelBubble;
+                }
+                Qva.Mgr.mySelect.OnChange = function () {
+                    var binder = Qva.GetBinder(this.binderid);
+                    if (!binder.Enabled) return;
+                    if (this.selectedIndex < 0) return;
+                    var opt = this.options[this.selectedIndex];
+                    binder.Set(this.Name, 'text', opt.value, true);
+                }
+                Qva.Mgr.mySelect.prototype.Paint = function (mode, node) {
+                    this.Touched = true;
+                    var element = this.Element;
+                    var currentValue = node.getAttribute("value");
+                    if (currentValue == null) currentValue = "";
+                    var optlen = element.options.length;
+                    element.disabled = mode != 'e';
+                    //element.value = currentValue;
+                    for (var ix = 0; ix < optlen; ++ix) {
+                        if (element.options[ix].value === currentValue) {
+                            element.selectedIndex = ix;
+                        }
+                    }
+                    element.style.display = Qva.MgrGetDisplayFromMode(this, mode);
+
+                }
             }
 
         })

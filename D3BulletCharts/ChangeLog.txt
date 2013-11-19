@@ -1,2 +1,6 @@
-﻿===== v1.0.0 - 11/18/2013 =====
+﻿===== v1.0.1 - 11/29/2013 =====
+* Added support for selecting one of 22 predefined color schemas
+
+
+===== v1.0.0 - 11/18/2013 =====
 * Release: Initial Release v1.0.0
