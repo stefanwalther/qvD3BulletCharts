@@ -7,6 +7,17 @@
     height:100%;
 }
 
+.prop-grid_last select {
+    min-width:30%;
+    width:95%;
+    padding-bottom:4px;
+    padding-top:4px;
+    padding-right:2px;
+    padding-left:2px;
+    margin-top:2px;
+}
+
+
 
 /* Bullet Graph Styles */
 .bullet { font: 10px sans-serif; }
@@ -17,7 +28,91 @@
 .bullet .range.s2 { fill: #ccc; }
 /*.bullet .measure.s0 { fill: lightsteelblue; }
 .bullet .measure.s1 { fill: steelblue; }*/
-.bullet .measure.s0 { fill: rgb(173, 221, 142); }
-.bullet .measure.s1 { fill: rgb(49, 163, 84); }
+.bullet .measure.s0-default { fill: rgb(150, 150, 150); }
+.bullet .measure.s1-default { fill: rgb(82, 82, 82); }
 .bullet .title { font-size: 14px; font-weight: bold; }
 .bullet .subtitle { fill: #999; }
+
+
+/* Styles: BuGn,BuPn,GnBu,OrRd,PuBu,PuBUGn,PuRd,RdPu,YlGn,YlGnBu,YlOrBr,YlOrRd,Blues,BluesLight,Greens,GreensLight,Oranges,OrangesLight,Purples,PurplesLight,Reds,RedsLight*/
+/* Styles-Label: */
+
+/* Styles */
+/* Colors taken from http://colorbrewer2.org*/
+.bullet .measure.s0-BuGn {fill: rgb(153, 216, 201); }
+.bullet .measure.s1-BuGn {fill: rgb(44, 162, 95); }
+
+.bullet .measure.s0-BuPn {fill: rgb(158, 188, 218); }
+.bullet .measure.s1-BuPn {fill: rgb(136, 86, 167); }
+
+.bullet .measure.s0-GnBu {fill: rgb(168, 221, 181); }
+.bullet .measure.s1-GnBu {fill: rgb(67, 162, 202); }
+
+.bullet .measure.s0-OrRd {fill: rgb(253, 187, 132); }
+.bullet .measure.s1-OrRd {fill: rgb(227, 74, 51); }
+
+.bullet .measure.s0-PuBu {fill: rgb(166, 189, 219); }
+.bullet .measure.s1-PuBu {fill: rgb(43, 140, 190); }
+
+.bullet .measure.s0-PuBUGn {fill: rgb(166, 189, 219); }
+.bullet .measure.s1-PuBUGn {fill: rgb(28, 144, 153); }
+
+.bullet .measure.s0-PuRd {fill: rgb(201, 148, 199); }
+.bullet .measure.s1-PuRd {fill: rgb(221, 28, 119); }
+
+.bullet .measure.s0-RdPu {fill: rgb(250, 159, 181); }
+.bullet .measure.s1-RdPu {fill: rgb(197, 27, 138); }
+
+.bullet .measure.s0-YlGn {fill: rgb(173, 221, 142); }
+.bullet .measure.s1-YlGn {fill: rgb(49, 163, 84); }
+
+.bullet .measure.s0-YlGnBu {fill: rgb(127, 205, 187); }
+.bullet .measure.s1-YlGnBu {fill: rgb(44, 127, 184); }
+
+.bullet .measure.s0-YlOrBr {fill: rgb(254, 196, 79); }
+.bullet .measure.s1-YlOrBr {fill: rgb(217, 95, 14); }
+
+.bullet .measure.s0-YlOrRd {fill: rgb(254, 178, 76); }
+.bullet .measure.s1-YlOrRd {fill: rgb(240, 59, 32); }
+
+
+
+.bullet .measure.s0-Blues {fill: rgb(158, 202, 225); }
+.bullet .measure.s1-Blues {fill: rgb(49, 130, 189); }
+
+.bullet .measure.s0-BluesLight {fill: rgb(222, 235, 247); }
+.bullet .measure.s1-BluesLight {fill: rgb(158, 202, 225); }
+
+.bullet .measure.s0-Greens {fill: rgb(161, 217, 155); }
+.bullet .measure.s1-Greens {fill: rgb(49, 163, 84); }
+
+.bullet .measure.s0-GreensLight {fill: rgb(229, 245, 224); }
+.bullet .measure.s1-GreensLight {fill: rgb(161, 217, 155); }
+
+.bullet .measure.s0-Oranges {fill: rgb(253, 174, 107); }
+.bullet .measure.s1-Oranges {fill: rgb(230, 85, 13); }
+
+.bullet .measure.s0-OrangesLight {fill: rgb(254, 230, 206); }
+.bullet .measure.s1-OrangesLight {fill: rgb(253, 174, 107); }
+
+.bullet .measure.s0-Purples {fill: rgb(188, 189, 220); }
+.bullet .measure.s1-Purples {fill: rgb(117, 107, 177); }
+
+.bullet .measure.s0-PurplesLight {fill: rgb(239, 237, 245); }
+.bullet .measure.s1-PurplesLight {fill: rgb(188, 189, 220); }
+
+.bullet .measure.s0-Reds {fill: rgb(252, 146, 114); }
+.bullet .measure.s1-Reds {fill: rgb(222, 45, 38); }
+
+.bullet .measure.s0-RedsLight {fill: rgb(254, 224, 210); }
+.bullet .measure.s1-RedsLight {fill: rgb(252, 146, 114); }
+
+
+
+
+
+
+
+
+
+

@@ -37,6 +37,7 @@ A QlikView sample application using this extension is published in the "Demo" di
 This QlikView Object Extension is only developed and tested with QlikView 11 SR2 or higher.
 
 ### Change Log
+* v1.0.1 (11/19/2913) - Added support for selecting one of 22 predefined color schemas
 * v1.0.0 (11/18/2013) - Initial version
 
 ### Known Issues

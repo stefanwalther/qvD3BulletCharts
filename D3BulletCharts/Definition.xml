@@ -2,15 +2,16 @@
 <ExtensionObject Path="D3BulletCharts" Label="D3 Bullet Charts" Type="object"  Description="Bullet Graph Charts" PageWidth="10000" PageHeight="10000">
   
   
-  <Initiate Name="Chart.Dimension.0.Field" Value="KPI_Name" />
-  <Initiate Name="Chart.Dimension.1.Field" Value="KPI_SubTitle" />
-  <Initiate Name="Chart.Expression.0.0.Definition" Value="=Only(Range_1)" />
-  <Initiate Name="Chart.Expression.1.0.Definition" Value="=Only(Range_2)" />
-  <Initiate Name="Chart.Expression.2.0.Definition" Value="=Only(Range_3)" />
-  <Initiate Name="Chart.Expression.3.0.Definition" Value="=Only(Measure_1)" />
-  <Initiate Name="Chart.Expression.4.0.Definition" Value="=Only(Measure_2)" />
-  <Initiate Name="Chart.Expression.5.0.Definition" Value="=Only(Marker_1)" />
-  <Initiate Name="Chart.Expression.6.0.Definition" Value="=Only(Marker_1)" />
+  <Initiate Name="Chart.Dimension.0.Field" Value="KPI - Name" />
+  <Initiate Name="Chart.Dimension.1.Field" Value="KPI - SubTitle" />
+  <Initiate Name="Chart.Expression.0.0.Definition" Value="=Only([KPI - Range 1])" />
+  <Initiate Name="Chart.Expression.1.0.Definition" Value="=Only([KPI - Range 2])" />
+  <Initiate Name="Chart.Expression.2.0.Definition" Value="=Only([KPI - Range 3])" />
+  <Initiate Name="Chart.Expression.3.0.Definition" Value="=Only([KPI - Measure 1])" />
+  <Initiate Name="Chart.Expression.4.0.Definition" Value="=Only([KPI - Measure 2])" />
+  <Initiate Name="Chart.Expression.5.0.Definition" Value="=Only([KPI - Marker 1])" />
+  <Initiate Name="Chart.Expression.6.0.Definition" Value="=Only([KPI - Marker 2])" />
+  <Initiate Name="Chart.Text.0.Content" Value="default" /> <!-- Color Schema-->
 
   <Initiate Name="Caption.Text" Value="D3 BulletCharts" />
   <Initiate Name="Caption.Allow.Minimize" Value="0" />
@@ -24,7 +25,7 @@
 
 
   <!-- Dimension(s) -->
-  <Dimension Label="Title" TargetName="Dimension KPI" Initial="" />
+  <Dimension Label="Title" TargetName="Dimension KPI-Name" Initial="" />
   <Dimension Label="SubTitle" TargetName="Dimension KPI-Subtitle" Initial="" />
   
   <!-- Measurement(s) -->
@@ -36,7 +37,7 @@
   <Measurement Label="Marker1" TargetName="Marker 1" Initial="" />
   <Measurement Label="Marker2" TargetName="Marker 2" Initial="" />
 
-
+  <Text Label="Color Scheme" Type="select" SelectLabel="Default Schema,BuGn,BuPn,GnBu,OrRd,PuBu,PuBUGn,PuRd,RdPu,YlGn,YlGnBu,YlOrBr,YlOrRd,Blues,BluesLight,Greens,GreensLight,Oranges,OrangesLight,Purples,PurplesLight,Reds,RedsLight" Select="default,BuGn,BuPn,GnBu,OrRd,PuBu,PuBUGn,PuRd,RdPu,YlGn,YlGnBu,YlOrBr,YlOrRd,Blues,BluesLight,Greens,GreensLight,Oranges,OrangesLight,Purples,PurplesLight,Reds,RedsLight" Width="" Expression="" />
   
   <!--<PropertiesPage Version="11" File="Properties.qvpp" />-->
 
