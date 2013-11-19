@@ -47,7 +47,7 @@ This QlikView Object Extension is only developed and tested with QlikView 11 SR2
 ### Possible Improvements
 Some improvements I could imagine:
 
-* Offering a possibility to select a color scheme
+* <del>Offering a possibility to select a color scheme</del>
 * Implementing an option to change between horizontal and vertical layout (see [http://www.jasondavies.com/bullet/](http://www.jasondavies.com/bullet/))
 * Additional layout properties for
  * font-sizes for "Title", "SubTitle" & "Scale"
